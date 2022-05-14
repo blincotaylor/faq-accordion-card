@@ -30,10 +30,10 @@ body {
 
 .accordion {
   position: relative;
-  width: 90%;
+  width: 85%;
   border-radius: 25px;
   box-shadow: 0 10px 20px var(--text-darkgrey);
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 8rem 2rem 3rem 2rem;
   margin: 9rem 0 3rem;
 
   background-color: hsl(0, 0%, 100%);
@@ -60,7 +60,7 @@ body {
 }
 
 .accordion__label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-darkgrey);
   position: relative;
   padding-bottom: 0.25rem;
