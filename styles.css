@@ -93,16 +93,17 @@ hr {
 }
 
 /*? use to flip arrow with js */
-.accordion__label.flipped:before {
+.active .accordion__label:before {
   transform: rotate(180deg);
 }
 
 /*? for js to denote expanded accordion components */
-.lbl-exp {
+.active .accordion__label {
   color: var(--text-dark);
+  font-weight: 700;
 }
 
-.con-exp {
+.active .accordion__content {
   height: initial;
   overflow: initial;
 }
