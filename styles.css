@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* colors */
+  --background-color1: hsl(273, 75%, 66%);
+  --background-color2: hsl(240, 73%, 65%);
+  --text-dark: hsl(238, 29%, 16%);
+  --text-light: hsl(14, 88%, 65%);
+  --text-darkgrey: hsl(237, 12%, 33%);
+  --text-lightgrey: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.page-container {
+  background: linear-gradient(
+    to bottom,
+    var(--background-color1),
+    var(--background-color2)
+  );
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.accordion {
+  position: relative;
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px var(--text-darkgrey);
+  padding: 8rem 2rem 2rem 2rem;
+  margin: 9rem 0 3rem;
+
+  background-color: hsl(0, 0%, 100%);
+}
+
+.accordion__image,
+.accordion__image-shadow {
+  position: absolute;
+  width: 80%;
+}
+
+.accordion__image {
+  top: -7.8rem;
+}
+
+.accordion__image-shadow {
+  top: 0;
+}
+
+.accordion__title {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.accordion__label {
+  font-size: 0.9rem;
+  color: var(--text-darkgrey);
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.accordion__label:before {
+  content: " ";
+  background-image: url("images/icon-arrow-down.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 7px;
+  width: 12px;
+  position: absolute;
+  top: 40%;
+  right: -12px;
+}
+
+.accordion__content {
+  height: 0;
+  overflow: hidden;
+  font-size: 0.75rem;
+  color: var(--text-lightgrey);
+  width: 95%;
+}
+
+hr {
+  background-color: var(--divider);
+  height: 1px;
+  border: none;
+}
+
+/*? use to flip arrow with js */
+.accordion__label.flipped:before {
+  transform: rotate(180deg);
+}
+
+/*? for js to denote expanded accordion components */
+.lbl-exp {
+  color: var(--text-dark);
+}
+
+.con-exp {
+  height: initial;
+  overflow: initial;
+}
+
+/*----- 
+frontend mentor styles for attribution -----*/
+
+.frontend-attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.frontend-attribution a {
+  color: hsl(228, 45%, 44%);
+}
