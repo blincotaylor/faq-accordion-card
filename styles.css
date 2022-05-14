@@ -46,11 +46,13 @@ body {
 }
 
 .accordion__image {
+  content: url("images/illustration-woman-online-mobile.svg");
   top: -7.8rem;
 }
 
 .accordion__image-shadow {
-  top: 0;
+  content: url("images/bg-pattern-mobile.svg");
+  top: -0.75rem;
 }
 
 .accordion__title {
@@ -106,6 +108,9 @@ hr {
 .active .accordion__content {
   height: initial;
   overflow: initial;
+}
+
+@media (min-width: 1440px) {
 }
 
 /*----- 
